@@ -1,0 +1,24 @@
+language: java
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "ltSC4C2eWm+gLkethh9Zs2VSdaVbxJS0jpW/4oEr8N0h/nHwC+s+jLzUOxJ6dtyS9
+   Mz0SP7bDY08xwzfXT5rnBiw9jDo7HX+UqbiIhfIM6apP0MMuGtzBp5ZAHPpXgg5TmH1oxU3NVXER
+   9yMwE/HuzdTgBYhzXpUeBc+Wny+VoKVcUHrIL9KFWbCgeE4uNVIUxW3IK33gE7jfi6xEv8xmPyK5
+   NuCiKFRzx/+m2T1+6ZOOdspgdpWkAjx5TZjMk3HvJvm26yt3DGzC1d9mutUwnJwpiqAWCA0bpnud
+   S1jzsGuf0uVSUJa80FTgUgDD2gaqdLiSVh3uVTFq+3HFGKBhEeCPbxqqBGJbT1ZlJv6PLYDjXMs3
+   lSMnUisXXk2F7HmIp2R6QccW4maU2xY54HkIVNZsnwWt35VrgkzqutxSW8Hf5TJQKeTAbXBvSpob
+   lxz6FO6iHJnrSqa4eAeIo2mNdzO30FCB86BgdIaUvZ006wxlUITvrZI7h3KiW/ovUidZtPQ6ys/z
+   46xtYHlD1j/hy/+HklPKdmXlG8sigRtHXab7kdhrl21jKeaGFgmP9tlZhmJA1Q/Q8X5ADdUmlFZL
+   MDyxrPnuerKfuuGeObwpudgwQ1dmXU/vtnc8EOyJM29wdYXWFxF5QitT7HPIAcvzCxRf8VB+Apj8
+   7Ov4qFqmQ4="
+
+addons:
+  coverity_scan:
+    project:
+      name: "mrcportillo/AgilesIC"
+    notification_email: marcossportillo@gmail.com
+    build_command_prepend: "mvn clean"
+    build_command:   "mvn install"
+    branch_pattern: master
