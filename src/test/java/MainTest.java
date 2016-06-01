@@ -1,6 +1,7 @@
 /**
  * Created by mrc on 31/05/16.
  */
+import Core.Main;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

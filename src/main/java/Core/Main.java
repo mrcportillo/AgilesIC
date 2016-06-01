@@ -1,3 +1,5 @@
+package Core;
+
 /**
  * Created by mrc on 31/05/16.
  */
