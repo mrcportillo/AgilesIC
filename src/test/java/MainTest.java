@@ -1,14 +1,15 @@
-/**
- * Created by mrc on 31/05/16.
- */
 import Core.Main;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Created by mrc on 31/05/16.
+ */
+
 public class MainTest {
-    private final String HELO_METHOD_TEST_STRING = "Hola juan";
+    private final static String HELO_METHOD_TEST_STRING = "Hola juan";
     private final String HELO_METHOD_TEST_MARCOS_STRING = "Hola señor Marcos";
-    
+
     @Test
     public void heloMethodTest() {
         String methodResult = Main.holaMethod("juan");
