@@ -1,5 +1,5 @@
 # AgilesIC
-Public repo for academic purpose.
+Public repo for academic purpose:
 
 Travis CI:
 [![Build Status](https://travis-ci.org/mrcportillo/AgilesIC.svg?branch=master)](https://travis-ci.org/mrcportillo/AgilesIC)
