@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MainTest {
     private final static String HELO_METHOD_TEST_STRING = "Hola juan";
-    private final String HELO_METHOD_TEST_MARCOS_STRING = "Hola señor Marcos";
+    private final String HELO_METHOD_TEST_MARCOS_STRING = "Hola señor ";
 
     @Test
     public void heloMethodTest() {
